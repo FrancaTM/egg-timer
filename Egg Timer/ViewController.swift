@@ -8,26 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    let softTime = 5
-    let mediumTime = 8
-    let hardTime = 12
-    
+    let eggTimes = ["Soft": 5, "Medium": 8, "Hard": 12]
+
     @IBAction func hardnessSelected(_ sender: UIButton) {
         let hardness = sender.currentTitle!
-        
+
         switch hardness {
         case "Soft":
-            print(softTime)
+            print(eggTimes["Soft"]!)
         case "Medium":
-            print(mediumTime)
+            print(eggTimes["Medium"]!)
         case "Hard":
-            print(hardTime)
+            print(eggTimes["Hard"]!)
 
         default:
             print("Error")
         }
     }
-    
 }
-
