@@ -15,6 +15,7 @@
 		25365DA12526CDD90028905C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25365D9F2526CDD90028905C /* LaunchScreen.storyboard */; };
 		25365DAC2526CDDA0028905C /* Egg_TimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25365DAB2526CDDA0028905C /* Egg_TimerTests.swift */; };
 		25365DB72526CDDA0028905C /* Egg_TimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25365DB62526CDDA0028905C /* Egg_TimerUITests.swift */; };
+		25365DC92526CFE60028905C /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 25365DC82526CFE60028905C /* alarm_sound.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		25365DB22526CDDA0028905C /* Egg TimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Egg TimerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25365DB62526CDDA0028905C /* Egg_TimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Egg_TimerUITests.swift; sourceTree = "<group>"; };
 		25365DB82526CDDA0028905C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25365DC82526CFE60028905C /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		25365D932526CDD40028905C /* Egg Timer */ = {
 			isa = PBXGroup;
 			children = (
+				25365DC82526CFE60028905C /* alarm_sound.mp3 */,
 				25365D942526CDD40028905C /* AppDelegate.swift */,
 				25365D962526CDD40028905C /* SceneDelegate.swift */,
 				25365D982526CDD40028905C /* ViewController.swift */,
@@ -233,6 +236,7 @@
 			files = (
 				25365DA12526CDD90028905C /* LaunchScreen.storyboard in Resources */,
 				25365D9E2526CDD90028905C /* Assets.xcassets in Resources */,
+				25365DC92526CFE60028905C /* alarm_sound.mp3 in Resources */,
 				25365D9C2526CDD40028905C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
