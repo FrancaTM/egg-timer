@@ -15,11 +15,11 @@ class ViewController: UIViewController {
 
         switch hardness {
         case "Soft":
-            print(eggTimes["Soft"]!)
+            print(eggTimes[hardness]!)
         case "Medium":
-            print(eggTimes["Medium"]!)
+            print(eggTimes[hardness]!)
         case "Hard":
-            print(eggTimes["Hard"]!)
+            print(eggTimes[hardness]!)
 
         default:
             print("Error")
