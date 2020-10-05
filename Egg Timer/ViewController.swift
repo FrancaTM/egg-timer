@@ -5,19 +5,22 @@
 //  Created by Tulio Marcos Franca on 01/10/20.
 //
 
+import AVFoundation
 import UIKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var progressBar: UIProgressView!
     
-    let eggTimes = ["Soft": 10, "Medium": 4, "Hard": 7]
+    let eggTimes = ["Soft": 3, "Medium": 4, "Hard": 7]
     var timer = Timer()
     var totalTime = 0
     var secondsPassed = 0
-        
+    var player: AVAudioPlayer!
+    let soundName = "alarm_sound"
+    
     @IBAction func hardnessSelected(_ sender: UIButton) {
-        progressBar.progress = 0
+        progressBar.progress = 0.0
         timer.invalidate()
         
         let hardness = sender.currentTitle!
@@ -35,6 +38,14 @@ class ViewController: UIViewController {
         } else {
             timer.invalidate()
             titleLabel.text = "DONE!"
+            
+            playSound(soundName: soundName)
         }
+    }
+    
+    func playSound(soundName: String) {
+        let url = Bundle.main.url(forResource: soundName, withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
     }
 }
