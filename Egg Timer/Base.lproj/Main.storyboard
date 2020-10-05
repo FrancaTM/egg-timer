@@ -139,6 +139,9 @@
                             <constraint firstItem="bzw-Na-2sO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="lGW-DN-chn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="5rA-nb-zUp" id="qY9-UV-6i9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
